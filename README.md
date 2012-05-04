@@ -1,4 +1,4 @@
-[CodeIgniter 2.1.0] 开源博客程序STBlog
+###[CodeIgniter 2.1.0] 开源博客程序STBlog
 
 原项目地址：http://code.google.com/p/stblog/
 
