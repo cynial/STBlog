@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+
+    RewriteRule ^logs/([^/]+)/([^/]+)/([^/]+)/([^/]+)$ /posts [R=301,L]
+
+	RewriteCond %{HTTP_HOST} ^cnsaturn\.com [nc]
+	RewriteRule (.*) http://www.cnsaturn.com/$1 [R=301,L]
+	
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /index.php/$1 [L]
+    
+    
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # If we don't have mod_rewrite installed, all 404's
+    # can be sent to index.php, and everything works as normal.
+
+    ErrorDocument 404 /index.php
+</IfModule> 

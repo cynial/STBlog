@@ -1,0 +1,436 @@
+/**
+* Theme Name: Halo
+* Theme version: 2.0
+* Author: Saturn (huyanggang@gmail.com)
+* Website: http://www.cnsaturn.com
+*/
+/** global */
+body
+{
+    font-family:Verdana,Tahoma,Arial;
+    font-size:13px;
+    cursor:default;
+    background-color:#FFFFFF;
+    word-break:break-word;
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+html
+{
+    height:100%;
+    margin-bottom:1px;
+}
+h1
+{
+    font-size:28px;
+    color:#cc0000;
+    font-family:Arial, Verdana, Helvetica, sans-serif;
+    font-weight:100;
+    text-shadow:0 1px 0 silver;
+}
+h2
+{
+    font-size:15px;
+    color:gray;
+    font-family:Arial, Verdana, Helvetica, sans-serif;
+    font-weight:300;
+    text-shadow:0 1px 0 silver
+}
+h3
+{
+    color:#cc0000;
+    font-size:14px;
+    text-align:left;
+    font-weight:300;
+    padding:5px;
+    margin-top:5px;
+}
+h4
+{
+    color:gray;
+    font-size:12px;
+    text-align:left;
+    padding:5px;
+    font-weight:normal;
+}
+h5
+{
+    font-size:14px;
+    font-weight:600;
+    color:gray;
+    margin-top:15px;
+}
+h6
+{
+    font-size:15px;
+    color:gray;
+    font-family:Arial, Verdana, Helvetica, sans-serif;
+    font-weight:800;
+    padding: 5px;
+}
+hr
+{
+    border:0px;
+    color:#CCCCCC;
+    background-color:#CDCDCD;
+    height: 1px;
+    width: 100%;
+    text-align: left;
+}
+p
+{
+    color:black;
+    line-height:20px;
+    padding: 5px 5px 5px 0px;
+}
+a
+{
+    color:#cc0000;
+    text-decoration:none;
+}
+a:hover
+{
+    color:#FFFFFF;
+    background-color:#cc0000;
+    text-decoration:none;
+}
+blockquote
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+img
+{
+    padding: 2px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+}
+/* Remove possible quote marks (") from &lt;q&gt;, &lt;blockquote&gt;. */
+blockquote:before, blockquote:after, q:before, q:after
+{
+    content: "";
+}
+blockquote, q
+{
+    quotes: "" "";
+}
+strike
+{
+	text-decoration: line-through;
+	color:#cc0000;
+}
+/** layout */
+#container
+{
+    /***/
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+}
+#header
+{
+    /***/
+    width:100%;
+    padding-top:15px;
+}
+#topbar/***/
+{
+    line-height:22px;
+    padding:3px;
+    font-size:14px;
+}
+#main
+{
+    /***/
+    width: 70%;
+    padding: 10px 0;
+    float: left;
+}
+#main p/***/
+{
+    padding: 5px;
+}
+#topbar ul/***/
+{
+    width:100%;
+    list-style-type: none;
+    float: left;
+    border-bottom:1px solid silver;
+}
+#topbar ul li/***/
+{
+    float: left;
+    margin:0 10px 0 0;
+}
+#topbar ul li a:hover/***/
+{
+    color: #FFFFFF;
+    background: #cc0000 none repeat scroll 0 0;
+}
+#search
+{
+    /***/
+    float: right;
+    margin-top: 30px;
+}
+/***/
+#footer
+{
+    /***/
+    clear:both;
+    font-size:12px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+#footer .right
+{
+    /***/
+    color:gray;
+    float:right;
+    font-size:100%;
+    margin-top:5px;
+}
+#footer .left
+{
+    /***/
+    color:gray;
+    float:left;
+    font-size:100%;
+    margin-top:5px;
+}
+#sidebar
+{
+    /***/
+    width: 28%;
+    float: right;
+    margin: 10px 0;
+    font-size:12px;
+}
+#sidebar ul
+{
+    /***/
+    list-style-type: none;
+}
+#sidebar ul li
+{
+    /***/
+    padding-top:5px;
+}
+#sidebar .post_list/***/
+{
+    margin-left:15px;
+}
+#sidebar .post_list li/***/
+{
+    padding-top:5px;
+    list-style-type: square;
+}
+.recent_comments li/***/
+{
+    margin-top:3px;
+    line-height:16px;
+}
+.tags
+{
+    /***/
+    color:gray;
+    margin:5px 0 2px 0px;
+    padding-bottom:2px;
+    border-bottom:1px dashed silver;
+}
+.related
+{
+    margin:0px 5px 5px 0px;
+    color: gray;
+    padding:0 5px 5px 0;
+}
+.related ul
+{
+    margin-left:25px;
+}
+.related ul li
+{
+    padding-top:5px;
+    list-style-type: square;
+}
+.post .metadata
+{
+    /***/
+    color: #666;
+    margin-bottom: 0.5em;
+}
+.post .metadata span
+{
+    /***/
+    margin-right: 5px;
+    padding-right: 8px;
+    border-right: 1px solid #ddd;
+}
+.post .metadata span.no-border
+{
+    border-color: transparent;
+}
+/***/
+.post .content
+{
+    /***/
+    margin:0px 5px 5px 0px;
+}
+.content ol
+{
+    margin-left:25px;
+}
+.content ol li
+{
+    padding-top:5px;
+    margin-left: 15px;
+    list-style-type:decimal;
+}
+.content ul
+{
+    margin-left:25px;
+    margin-bottom: 10px;
+}
+.content ul li
+{
+    padding-top:5px;
+    margin-left: 15px;
+    list-style-type:lower-alpha;
+}
+.hints
+{
+	background: #FBE6F2;
+	border: 1px solid #D893A1;
+	color: #333;
+	margin: 10px 0 5px 2px;
+	padding: 10px;
+
+}
+div.pagination
+{
+    /***/
+    margin-top: 10px;
+    text-align:center;
+    padding:4px 6px 4px 0;
+}
+div.pagination a
+{
+    /***/
+    text-decoration:none;
+    padding:5px 6px 4px 5px;
+    margin:0 3px 0 3px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+div.pagination a:hover
+{
+    /***/
+    color:#FFFFFF;
+    border:1px solid #cc0000;
+    background-color:#cc0000;
+}
+div.pagination span.current
+{
+    /***/
+    padding:5px 6px 4px 5px;
+    margin:0 3px 0 3px;
+    border: 1px solid #c1c1c1;
+    font-weight:bold;
+    color:#444444;
+    background-color:#ddd;
+}
+div.pagination span.disabled
+{
+    /***/
+    display:none;
+}
+/* = comment */
+#comments
+{
+    font-size: 12px;
+}
+#comments ol
+{
+    list-style: none;
+    margin: 0 0 30px;
+}
+#comments ol li
+{
+    clear: both;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#comments li.alt
+{
+    background: #f3f3f3;
+}
+cite.comment-author
+{
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+}
+img.avatar
+{
+    float: left;
+    margin: 3px 15px 15px 0;
+    width: 48px;
+    height: 48px;
+    background: #ccc;
+    border: none;
+}
+small.comment-date
+{
+    float: right;
+    margin-top: -22px;
+}
+.comment-text
+{
+    overflow: auto;
+    margin: 5px 0 0 60px;
+}
+#comment-form label
+{
+    margin-left: 15px;
+}
+#comment-form input.text
+{
+    width: 240px;
+}
+#comment-form textarea
+{
+    width: 480px;
+    height: 220px;
+    overflow: auto;
+}
+#respond
+{
+    padding:15px 0 0
+}
+#respond form
+{
+    margin: 0 0 0 5px
+}
+#respond form p
+{
+    padding:2px 0
+}
+#respond form p span
+{
+    font-size:90%
+}
+#respond form input
+{
+    padding:2px;
+}
+#respond form textarea
+{
+    width:60%; padding:2px;
+}
