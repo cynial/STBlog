@@ -122,7 +122,8 @@ class Login extends CI_Controller {
 				
 				$this->session->set_flashdata('login_error', 'TRUE');
 				
-				$this->form_validation->error_string = '用户名或密码无效';
+				$this->_data['login_error_msg'] = '用户名或密码无效';
+
 				
 				$this->load->view('admin/login', $this->_data);
 			}
