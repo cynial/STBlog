@@ -11,7 +11,7 @@
 					<div class="message notice typecho-radius-topleft typecho-radius-topright typecho-radius-bottomleft typecho-radius-bottomright">
                     <ul>
                         <?php echo validation_errors(); ?>                    
-                        <?php echo (empty($this->form_validation->error_string))?'':'<li>'.$this->form_validation->error_string.'</li>'; ?>
+                        <?php echo (empty($login_error_msg))?'':'<li>'.$login_error_msg.'</li>'; ?>
                     </ul>
 					
                     </div>
